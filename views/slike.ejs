@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/style/style.css">
+
+<h1>Galerija slika</h1>
+
+<section class="gallery">
+    <% images.forEach(image => { %>
+        <figure id="<%= image.id %>">
+            <a href="#<%= image.id %>">
+                <img src="<%= image.url %>" alt="<%= image.title %>">
+            </a>
+            <figcaption><%= image.title %></figcaption>
+        </figure>
+    <% }) %>
+</section>
