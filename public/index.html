@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: opis stranice za tražilice -->
+    <meta name="description" content="Baza filmova - pregledajte popis filmova, najnovije trejlere i informacije o omiljenim naslovima. Ocjene, žanrovi i godina izdanja.">
+    
+    <!-- SEO: ključne riječi vezane uz filmove -->
+    <meta name="keywords" content="filmovi, baza filmova, kino, trejleri, najbolji filmovi, ocjene filmova, filmska baza">
+    
+    <!-- SEO: autor stranice -->
+    <meta name="author" content="Web Programiranje">
+    
+    <!-- SEO: robots - indeksiraj i prati linkove -->
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Baza Filmova | Popis i Trejleri</title>
+</head>
+<body>
+    <header>
+        <h1>🎬 Baza Filmova</h1>
+        <p>Vaš vodič kroz svijet filma - popis filmova, ocjene i najnoviji trejleri</p>
+    </header>
+
+    <nav aria-label="Primarna navigacija">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="pages/grafikon.html">Graphs</a></li>
+			<li><a href="pages/slike.html">Images</a></li>
+            
+            <!-- Padajući izbornik -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Filmovi ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Filmovi</a></li>
+                    <li><a href="#">Akcija</a></li>
+                    <li><a href="#">Komedija</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Horor</a></li>
+                    <li><a href="#">Animacija</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-wrapper">
+            <!-- Sekcija s popisom filmova -->
+            <section aria-labelledby="filmovi">
+                <h2 id="filmovi">📽️ Popis Filmova</h2>
+                <div class="table-container">
+                    <table>
+                        <caption>Tablica filmova s osnovnim podacima</caption>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Naslov</th>
+                                <th>Godina</th>
+                                <th>Žanr</th>
+                                <th>Trajanje</th>
+                                <th>Država</th>
+                                <th>Ocjena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>s155</td><td>Kuroko's Basketball</td><td>2015</td><td>Anime serija</td><td>3 sezone</td><td>Japan</td><td>TV-MA</td></tr>
+                            <tr><td>s156</td><td>Labyrinth</td><td>1986</td><td>Akcija i avantura</td><td>101 min</td><td>Ujedinjeno Kraljevstvo / SAD</td><td>PG</td></tr>
+                            <tr><td>s157</td><td>Letters to Juliet</td><td>2010</td><td>Komedije</td><td>105 min</td><td>SAD</td><td>PG</td></tr>
+                            <tr><td>s158</td><td>Level 16</td><td>2018</td><td>Znanstvena fantastika i fantastika</td><td>102 min</td><td>Kanada</td><td>TV-14</td></tr>
+                            <tr><td>s159</td><td>Love Don't Cost a Thing</td><td>2003</td><td>Komedije</td><td>101 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s160</td><td>Love in a Puff</td><td>2010</td><td>Komedije</td><td>103 min</td><td>Hong Kong</td><td>TV-MA</td></tr>
+                            <tr><td>s161</td><td>Major Dad</td><td>1992</td><td>Komedije</td><td>4 sezone</td><td>SAD</td><td>TV-PG</td></tr>
+                            <tr><td>s162</td><td>Mars Attacks!</td><td>1996</td><td>Komedije</td><td>106 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s163</td><td>Marshall</td><td>2017</td><td>Drame</td><td>118 min</td><td>SAD / Kina / Hong Kong</td><td>PG-13</td></tr>
+                            <tr><td>s164</td><td>My Boss's Daughter</td><td>2003</td><td>Komedije</td><td>86 min</td><td>SAD</td><td>R</td></tr>
+                            <tr><td>s165</td><td>Mystery Men</td><td>1999</td><td>Akcija i avantura</td><td>121 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s166</td><td>Oldsters</td><td>2019</td><td>Krimi serije</td><td>1 sezona</td><td>Čile</td><td>TV-MA</td></tr>
+                            <tr><td>s167</td><td>Once Upon a Time in America</td><td>1984</td><td>Klasici</td><td>229 min</td><td>Italija / SAD</td><td>R</td></tr>
+                            <tr><td>s168</td><td>Open Season 2</td><td>2008</td><td>Obiteljski filmovi</td><td>76 min</td><td>SAD / Kanada</td><td>PG</td></tr>
+                            <tr><td>s169</td><td>Osmosis Jones</td><td>2001</td><td>Akcija i avantura</td><td>95 min</td><td>SAD</td><td>PG</td></tr>
+                            <tr><td>s170</td><td>Poseidon</td><td>2006</td><td>Akcija i avantura</td><td>98 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s171</td><td>Rhyme & Reason</td><td>1997</td><td>Dokumentarci</td><td>89 min</td><td>SAD</td><td>R</td></tr>
+                            <tr><td>s172</td><td>Same Kind of Different as Me</td><td>2017</td><td>Drame</td><td>120 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s173</td><td>School of Rock</td><td>2003</td><td>Komedije</td><td>110 min</td><td>SAD / Njemačka</td><td>PG-13</td></tr>
+                            <tr><td>s174</td><td>Snervous Tyler Oakley</td><td>2015</td><td>Dokumentarci</td><td>83 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s175</td><td>Tears of the Sun</td><td>2003</td><td>Akcija i avantura</td><td>121 min</td><td>SAD</td><td>R</td></tr>
+                            <tr><td>s176</td><td>The Blue Lagoon</td><td>1980</td><td>Drame</td><td>105 min</td><td>SAD</td><td>R</td></tr>
+                            <tr><td>s177</td><td>The Golden Child</td><td>1986</td><td>Akcija i avantura</td><td>94 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s178</td><td>The Guns of Navarone</td><td>1961</td><td>Akcija i avantura</td><td>156 min</td><td>Ujedinjeno Kraljevstvo / SAD</td><td>TV-14</td></tr>
+                            <tr><td>s179</td><td>The Interview</td><td>2014</td><td>Akcija i avantura</td><td>112 min</td><td>SAD</td><td>R</td></tr>
+                            <tr><td>s180</td><td>The Nutty Professor</td><td>1996</td><td>Komedije</td><td>95 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s181</td><td>The Nutty Professor II: The Klumps</td><td>2000</td><td>Komedije</td><td>107 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s182</td><td>Turning Point: 9/11 and the War on Terror</td><td>2021</td><td>Dokumentarne serije</td><td>1 sezona</td><td>SAD</td><td>TV-14</td></tr>
+                            <tr><td>s183</td><td>Welcome Home Roscoe Jenkins</td><td>2008</td><td>Komedije</td><td>114 min</td><td>SAD</td><td>PG-13</td></tr>
+                            <tr><td>s184</td><td>In the Line of Fire</td><td>1993</td><td>Akcija i avantura</td><td>129 min</td><td>SAD</td><td>R</td></tr>
+                            <tr><td>s185</td><td>Sparking Joy</td><td>2021</td><td>Reality</td><td>1 sezona</td><td>SAD</td><td>TV-PG</td></tr>
+                        </tbody>
+
+
+
+                    </table>
+                </div>
+            </section>
+
+            <!-- Glavna sekcija s opisom baze filmova -->
+            <section aria-labelledby="glavna-sekcija">
+                <h2 id="glavna-sekcija">🎞️ O našoj bazi filmova</h2>
+                <p>Naša baza filmova sadrži podatke o različitim filmskim naslovima iz cijelog svijeta. Svaki film donosi podatke o godini izdanja, žanru, trajanju, državi porijekla i ocjeni.</p>
+                <p>Baza se kontinuirano ažurira novim naslovima. Cilj nam je pružiti korisnicima što potpuniju informaciju o filmovima koje žele pogledati.</p>
+            </section>
+
+            <!-- Article s novostima iz svijeta filma -->
+            <article aria-labelledby="vijesti">
+                <h2 id="vijesti">📰 Novosti iz svijeta filma</h2>
+                <p><strong>Novi filmovi u kinima:</strong> Ovaj tjedan u kina stižu dva nova hita - akcijski spektakl "Noćna misija" i romantična komedija "Ljubav na prvi klik".</p>
+                <p><strong>Filmski festival:</strong> 15. izdanje Festivala kratkog filma počinje sljedeći tjedan. U programu više od 50 filmova iz 20 zemalja.</p>
+                <p><strong>Top lista:</strong> Ovotjedni izbor najboljih filmova prema ocjenama publike vodi kultni komad "Some Like It Hot" s ocjenom 9.1.</p>
+            </article>
+        </div>
+			<div class="sidebars">
+		        <!-- Aside s filmom tjedna -->
+		        <aside aria-label="Film tjedna">
+		            <h3>🎬 Film tjedna</h3>
+		            <div class="video-container">
+		                <iframe 
+		                    width="100%" 
+		                    height="250" 
+		                    src="https://www.youtube.com/embed/YE7VzlLtp-4" 
+		                    title="Big Buck Bunny - kratki animirani film" 
+		                    frameborder="0" 
+		                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		                    referrerpolicy="strict-origin-when-cross-origin" 
+		                    allowfullscreen>
+		                </iframe>
+		            </div>
+		            <p><strong>🎥 Big Buck Bunny</strong> - kratki animirani film o ljubaznom zecu koji se suočava s tri mala stvorenja.</p>
+		            <p>Trajanje: 10 minuta | Žanr: Animacija, Komedija</p>
+		            <p><a href="#">Više o filmu →</a></p>
+		        </aside>
+		        <!-- Aside s fotografijama koje se mijenjaju ovisno o veličini ekrana -->
+		        <aside aria-label="Galerija filmova">
+		            <h3>🎬 Filmske fotografije</h3>
+		    
+		            <figure class="film-figure">
+		                <div class="film-image-container" 
+		                    role="img" 
+		                    aria-label="Filmska kamera i oprema"
+		                    aria-describedby="image-description"></div>
+		                <figcaption id="image-description">
+		                    Filmska industrija - kamera na setu
+		                </figcaption>
+		            </figure>
+		            
+		            <p><strong>🎥 Filmska čarolija</strong> - Fotografija prikazuje filmsku opremu i atmosferu na setu.</p>
+		            <p><em>Prelazak mišem preko fotografije mijenja prozirnost i dodaje efekt zumiranja.</em></p>
+        </aside>
+			</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Baza Filmova. Sva prava pridržana.</p>
+        <p>Kontakt: info@bazafilmova.hr | Tel: +385 1 123 4567</p>
+        <p><a href="#">O nama</a> | <a href="#">Uvjeti korištenja</a> | <a href="#">Kontakt</a></p>
+    </footer>
+</body>
+</html>
