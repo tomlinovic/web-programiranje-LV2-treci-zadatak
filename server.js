@@ -1,25 +1,22 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000;
-app.get('/', (req, res) => {
-res.send('Pozdrav sa Railway servera!');
-});
-app.listen(PORT, () => {
-console.log('Server pokrenut na portu ${PORT}');
-app.use(express.static('public'));
-
-const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
+
+// EJS engine
 app.set('view engine', 'ejs');
+
+// Public folder
 app.use(express.static('public'));
 
+// Index ruta
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Galerija slika
 app.get('/slike', (req, res) => {
     const folderPath = path.join(__dirname, 'public', 'images');
     const files = fs.readdirSync(folderPath);
@@ -35,6 +32,7 @@ app.get('/slike', (req, res) => {
     res.render('slike', { images });
 });
 
-app.listen(process.env.PORT || 3000);
-
+// Pokretanje servera
+app.listen(PORT, () => {
+    console.log(`Server pokrenut na portu ${PORT}`);
 });
